@@ -1,0 +1,460 @@
+#bgvideo {
+    position: relative;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 8%;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#playpausebtn {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0, 0.7);
+    border-radius: 0.5vw;
+    color: whitesmoke;
+    font-size: 2vw;
+    width: 3vw;
+    height: 2.7vw;
+    display: none;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#playpausebtn span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-52%, -52%);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    background-color: whitesmoke;
+    border-radius: 2.7vw;
+    box-shadow: 0 0.3vw 0.9vw rgba(0,0,0,0.35) ;
+    position: relative;
+    overflow: hidden;
+    width: 60vw;
+    max-width: 100%;
+    min-height: 67vh;
+    display: flex;
+}
+
+#logoutbtn {
+    background-color: rgb(29, 147, 113);
+    color: whitesmoke;
+    font-size: 1vw;
+    padding: 0.52vw 2.35vw;
+    border: 0.1vw solid transparent;
+    border-radius: 0.4vw;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 2vw;
+    cursor: pointer;
+    position: absolute;
+    right: 2vw;
+    bottom: 1vw;
+}
+
+#adminbtn {
+    background-color: rgb(29, 147, 113);
+    color: whitesmoke;
+    font-size: 1vw;
+    padding: 0.52vw 2.35vw;
+    border: 0.1vw solid transparent;
+    border-radius: 0.4vw;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 2vw;
+    cursor: pointer;
+    position: absolute;
+    right: 15vw;
+    bottom: 1vw;
+}
+
+#form_user_info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 1%;
+    top: 2.5%;
+    height: 30%;
+    width: 43%;
+    border: solid rgb(29, 147, 113) 0.2vw;
+    border-radius: 0.9vw;
+    gap: 0.5vw;
+    overflow: hidden;
+}
+
+.infos {
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    position: relative;
+    top: 2.5vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.email {
+    font-size: 1vw;
+    left: 6vw;
+    max-width: 19.5vw;
+}
+
+.password {
+    font-size: 1vw;
+    left: 7.5vw;
+    max-width: 14vw;
+}
+
+.pseudo {
+    font-size: 2vw;
+    left: 2vw;
+    max-width: 23.5vw;
+}
+
+.emaillabel {
+    position: absolute;
+    font-size: 0.75vw;
+    top: 5.7vw;
+    left: 3vw;
+}
+
+.passwordlabel {
+    position: absolute;
+    font-size: 0.75vw;
+    top: 7.2vw;
+    left: 3vw;
+}
+
+button img {
+    width: 2vw;
+}
+
+#form_user_info button {
+    width: 1.5vw;
+    background-color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 1.5vw;
+    bottom: 0.5vw;
+}
+
+#edit {
+    position: absolute;
+    width: 1.5vw;
+    background-color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 8.2vw;
+    left: 23.75vw;
+}
+
+.blog {
+    position: absolute;
+    border-radius: 0.7vw;
+    top: 15%;
+    right: 4.5%;
+    width: 25vw;
+    height: 23vw;
+    border: solid black 0.2vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(29, 147, 113) rgb(245, 245, 245, 0);
+}
+
+.txtblog {
+    position: absolute;
+    border-radius: 0.7vw;
+    font-size: 0.7vw;
+    top: 85%;
+    right: 22.5%;
+    width: 18vw;
+    height: 2.5vw;
+    border: solid black 0.2vw;
+    padding-left: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-right: 1vw;
+    background-color: white;
+    overflow-wrap: break-word;
+    resize: none;
+    transition: height 1s ease;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(29, 147, 113) rgb(245, 245, 245, 0);    
+}
+
+.arraycoms {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 2%;
+    min-height: 25%;
+    height: fit-content;
+    text-align: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 0.5vw;
+}
+
+.onecom {
+    position: relative;
+    display: flex;
+    height: fit-content;
+    left: 4%;
+    width: 92%;
+    flex-direction: row;
+    border-bottom: solid black 0.2vw;
+    margin-bottom: 0.8vw;
+}
+
+.btndel {
+    position: absolute;
+    top: 2vw;
+    background-color: white;
+    border: none;
+    width: 1.2vw;
+    height: 1.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.btndel img {
+    background-color: none;
+    width: 2vw;
+    height: 2vw;
+}
+
+.pseudlike {
+    display: flex;
+    flex-direction: column;
+}
+
+.empty{
+    position: relative;
+    top: -0.1vw;
+    left: 1.5vw;
+    width: 2vw; 
+	height: 2vw; 
+    margin-bottom: -0.5vw;
+    z-index: 2;
+	background: black;
+	clip-path: path("M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181");
+}
+
+.filled {
+    position: absolute;
+    top: 2vw;
+    left: 1.5vw;
+    width: 2vw; 
+	height: 2vw; 
+    margin-bottom: -0.5vw;
+    z-index: 1;
+	background: red;
+	clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+    cursor: pointer;
+}
+
+.likenb {
+    position: absolute;
+    top: 2.2vw;
+    left: 4vw;
+    font-size: 0.9vw;
+}
+
+#com {
+    text-align: justify;
+    width: 11vw;
+    margin-top: 0.5vw;
+    font-weight: 450;
+    overflow-wrap: break-word;
+    margin-bottom: 0.5vw;
+    font-size: 0.9vw;
+}
+
+#loc {
+    width: 4vw;
+    font-weight: 450;
+    overflow-wrap: break-word;
+    margin-bottom: 0.5vw;
+    font-size: 0.6vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#loc a {
+    text-decoration: none;
+    color: rgb(29, 147, 113);
+}
+
+#who {
+    width: 7vw;
+    height: auto;
+    margin-top: 0.5vw;
+    margin-right: 0.5vw;
+    font-weight: 450;
+    overflow-wrap: break-word;
+    margin-bottom: 0.5vw;
+    font-size: 0.9vw;
+}
+
+#yourcoms {
+    font-size: 2vw;
+    color: rgb(29, 147, 113);
+    position: absolute;
+    top: 5%;
+    left: 60%;
+}
+
+.stats h1 {
+    font-size: 1.5vw;
+    color: rgb(29, 147, 113);
+    position: relative;
+    left: 1%;
+}
+
+#favtrips {
+    top: -0.9vw;
+}
+
+.stat {
+    position: relative;
+    width: 100%;
+    min-height: 4vw;
+    height: fit-content;
+    left: 1%;
+    top: 1%;
+}
+
+.places {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 20vw;
+    top: -1%;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(29, 147, 113) rgb(245, 245, 245, 0);
+    margin-bottom: -1vw;
+    gap: 1vw;
+}
+
+.places img {
+    height: 3vw;
+}
+
+.stats {
+    position: relative;
+    top: 35%;
+    left: 5%;
+    height: 60%;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.likes span {
+    position: relative;
+    top: 10%;
+    margin-left: 2.5%;
+    font-size: 1vw;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 8vw;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(29, 147, 113) rgb(245, 245, 245, 0);
+    margin-top: -2.5vw;
+    width: 20vw;
+}
+
+.ratings span {
+    position: relative;
+    font-size: 1vw;
+    top: 1%;
+    margin-left: 4.5%;
+    left: -0.3vw;
+}
+
+.ratings img {
+    width: 2vw;
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    margin-right: 0.5vw;
+}
+
+.star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 1.6vw;
+    height: 1.6vw;
+    top: 0.2vw;
+    left: 0.2vw;
+    position: relative;
+    background-color: whitesmoke;
+}
+
+.starborder {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 2vw;
+    height: 2vw;
+    margin-top: 0.55vw;
+    margin-left: 0.2vw;
+    background-color: black;
+}
+
+.yellowrect {
+    position: relative;
+    width: 2vw;
+    height: 2vw;
+    background-color: rgb(254, 206, 0);
+    right: 2vw;
+    bottom: 0.1vw;
+    transition: transform 0.5s ease;
+}
+
+.yellowrect_ {
+    position: relative;
+    width: 2vw;
+    height: 2vw;
+    background-color: rgb(254, 206, 0);
+    bottom: 0.1vw;
+}
+
+.single {
+    display: flex;
+    flex-direction: row;
+}
