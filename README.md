@@ -51,34 +51,9 @@ cd cy-trip/
 
 ## 👨‍💻 Development Team
 
-<table align="center">
-<tr>
-<td align="center">
-<a href="https://github.com/NayJi7">
-<img src="https://github.com/NayJi7.png" width="80" height="80" style="border-radius:50%"><br>
-<b>@NayJi7</b>
+<a href="https://github.com/NayJi7/cy-trip/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=NayJi7/cy-trip&refresh=true" />
 </a>
-</td>
-<td align="center">
-<a href="https://github.com/Lyeryne">
-<img src="https://github.com/Lyeryne.png" width="80" height="80" style="border-radius:50%"><br>
-<b>@Lyeryne</b>
-</a>
-</td>
-<td align="center">
-<a href="https://github.com/abdel95j">
-<img src="https://github.com/abdel95j.png" width="80" height="80" style="border-radius:50%"><br>
-<b>@abdel95j</b>
-</a>
-</td>
-<td align="center">
-<a href="https://github.com/aymanouguerd">
-<img src="https://github.com/aymanouguerd.png" width="80" height="80" style="border-radius:50%"><br>
-<b>@aymanouguerd</b>
-</a>
-</td>
-</tr>
-</table>
 
 ---
 
