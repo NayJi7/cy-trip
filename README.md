@@ -51,9 +51,34 @@ cd cy-trip/
 
 ## 👨‍💻 Development Team
 
-<a href="https://github.com/NayJi7/cy-trip/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=NayJi7/cy-trip" />
-</a>
+<table style="border: none;">
+<tr>
+    <td align="center" style="border: none;">
+        <a href="https://github.com/NayJi7">
+            <img src="https://github.com/NayJi7.png" width="80px;" style="border-radius: 50%;" alt="Adam Terrak"/>
+            <br /><sub><b>Adam Terrak</b></sub>
+        </a>
+    </td>
+    <td align="center" style="border: none;">
+        <a href="https://github.com/Lyeryne">
+            <img src="https://github.com/Lyeryne.png" width="80px;" style="border-radius: 50%;" alt="Louaye Saghir"/>
+            <br /><sub><b>Louaye Saghir</b></sub>
+        </a>
+    </td>
+    <td align="center" style="border: none;">
+        <a href="https://github.com/abdel95j">
+            <img src="https://github.com/abdel95j.png" width="80px;" style="border-radius: 50%;" alt="Abdelah El Harsal"/>
+            <br /><sub><b>Abdelah El Harsal</b></sub>
+        </a>
+    </td>
+    <td align="center" style="border: none;">
+        <a href="https://github.com/aymanouguerd">
+            <img src="https://github.com/aymanouguerd.png" width="80px;" style="border-radius: 50%;" alt="Ayman Ougerd"/>
+            <br /><sub><b>Ayman Ougerd</b></sub>
+        </a>
+    </td>
+</tr>
+</table>
 
 ---
 
